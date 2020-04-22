@@ -1,0 +1,11 @@
+a.	Baca BT kanal IR Window (IRW) 10.7 μm dan NWP Tropopause Temperature
+b.	Identifikasi piksel dengan IRW BT ≤ 215 K dan ≤ NWP tropopause temp
+c.	Mulai dari BT terdingin dalam list, pastikan tidak ada piksel dingin dalam jarak 15 km satu sama lain. 
+Pixel yang memenuhi kriteria ini disebut "piksel kandidat OT"
+d.	Ambil sampel cloud anvil sekitar pada radius 8 km dalam 16 arah di sekitar piksel kandidat overshooting 
+	Radius 8 km dipilih sebagai sampel wilayah di luar OT, karena OT umumnya  berdiameter <15 km. 
+Hal ini untuk mencegah terambilnya sampel berupa piksel OT ketika menghitung rata-rata di sekitar brightness temperature dari anvil cloud
+e.	Piksel yang bernilai setidaknya 6,5 K lebih dingin dari anvil di sekitarnya dianggap "piksel pusat Overshooting Top (OT)"
+f.	Dalam suatu kotak pencarian yang berpusat pada piksel pusat OT, 
+cari piksel yang setidaknya 50% lebih dingin daripada rata-rata di sekitarnya. 
+Hal ini digunakan untuk mengidentifikasi seluruh "TOP" dan bukan hanya satu piksel pada “Top”
